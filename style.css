@@ -41,8 +41,9 @@ nav {
 
 #info {
     /* height: 400px; */
-    position: absolute;
-    top: 300px;
+    /* position: absolute; */
+    position: relative;
+    /* top: 300px; */
     /* bottom: 0; */
     background-color: var(--med-light);
     width: 100%;
