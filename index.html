@@ -9,7 +9,7 @@
     <script src="js/dialog.js" defer></script>
 </head>
 <body>
-    <main>
+    <main class="clearfix">
         <nav class="clearfix">
             <h1 id="logo">Vegexpress</h1>
             <ul>
@@ -18,12 +18,12 @@
                 <li class="navitem"><a href="">Yhteystiedot</a></li>
             </ul>
         </nav>
-        <section style="height: 200px;">
+        <section style="height: 150px;">
             <button id="open_dialog">Open Dialog</button>
 
    
         </section>
-        <div id="info">
+        <div class="info">
         <div id="info-content" class="clearfix">
             <img src="img/Tomato.png" alt="Tomaatti" id="tomato">
             <img src="img/purple-salad.png" alt="Salaattiannos" id="info-pic">
@@ -139,9 +139,9 @@
           tekstiä
         </p>
         <form action="post">
-        <label for="surname">Sukunimi:<input type="text" name="surname" id=""></label>
-        <label for="email">Sähköposti:<input type="email" name="email" id=""></label>
-        <label for="">Salasana:<input type="password"></label>
+        <label for="surname">Sukunimi:<input type="text" name="surname" id="" minlength="3" required></label>
+        <label for="email">Sähköposti:<input type="email" name="email" id="" pattern=".*@metropolia\.fi$" required></label>
+        <label for="">Salasana:<input type="password" required pattern="^(?=.*[0-9])(?=.*[A-Z]).{8,}$"></label>
         </form>
         <div class="flex flex-space-between">
           <button id="close_dialog">Close</button>
