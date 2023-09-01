@@ -11,11 +11,18 @@
     --dark: #340030;
     --med-dark: #67005e;
     --med-light: #d879d1;
+    --default-border: 3px solid var(--dark);
+}
+
+
+body:has(dialog[open]) {
+    overflow-y: hidden;
 }
 
 body {
     background-color: var(--light);
 }
+
 
 main {
     width: 80%;
