@@ -94,13 +94,14 @@ input {
     border-radius: 10px;
     margin: 1px auto;
     border: var(--default-border);
+    padding: 3px;
 }
 
 
 input:valid {
-  background-color: green;
+  background-color: #c3ffc3;
 }
 
 input:invalid {
-  background-color: red;
+  background-color: #ffc3c3;
 }

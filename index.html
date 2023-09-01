@@ -139,9 +139,9 @@
           tekstiä
         </p>
         <form action="post">
-        <label for="surname">Sukunimi:<input type="text" name="surname" id="" minlength="3" required></label>
-        <label for="email">Sähköposti:<input type="email" name="email" id="" pattern=".*@metropolia\.fi$" required></label>
-        <label for="">Salasana:<input type="password" required pattern="^(?=.*[0-9])(?=.*[A-Z]).{8,}$"></label>
+        <label for="surname">Sukunimi (väh. 3 merkkiä):<input type="text" name="surname" id="" minlength="3" placeholder="Sukunimi" required></label>
+        <label for="email">Sähköposti (@metropolia.fi):<input type="email" name="email" id="" pattern=".*@metropolia\.fi$" placeholder="@metropolia.fi" required></label>
+        <label for="">Salasana (väh. yksi iso kirjain sekä numero):<input type="password" required pattern="^(?=.*[0-9])(?=.*[A-Z]).{8,}$" placeholder="Salasana"></label>
         </form>
         <div class="flex flex-space-between">
           <button id="close_dialog">Close</button>
