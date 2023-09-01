@@ -16,7 +16,7 @@ button {
     border: var(--default-border);
     letter-spacing: ccalc(3 * var(--leading, 0.025em));
     font-family: inherit;
-    color: var(--grey-color);
+    color: var(--dark);
     background-color: var(--med-light);
     font-size: large;
     font-weight: 700;
@@ -36,6 +36,11 @@ button {
   button.cta:focus {
     box-shadow: 0 0 0 0.125rem #fff, 0 0 0 0.2rem var(--cta-color);
   }
+
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--med-dark);
+}
   
   #open_dialog {
     margin: 0 auto;
