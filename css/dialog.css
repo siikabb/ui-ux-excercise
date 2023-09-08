@@ -92,7 +92,7 @@ button:hover {
     margin: 8px auto;
   }
 
-input {
+.myForm input {
     display: block;
     width: 95%;
     height: 3em;
@@ -100,13 +100,29 @@ input {
     margin: 1px auto;
     border: var(--default-border);
     padding: 3px;
+    background-color: white;
+    transition: background-color 0.5s;
 }
 
 
-input:valid {
+.myForm input:valid {
   background-color: #c3ffc3;
 }
 
-input:invalid {
+.myForm input:invalid {
   background-color: #ffc3c3;
+}
+
+.myForm input[type="submit"] {
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: large;
+  font-weight: 700;
+  height: 44px;
+  width: 50%;
+}
+
+.myForm input[type="submit"]:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px var(--med-dark);
 }

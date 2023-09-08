@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+/* mobile first */
+
+body {
+  background-color: lightgreen;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-family:'Courier New', Courier, monospace;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+    h1 {
+        color: red;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        width: 800px;
+        margin: auto;
+    }
+}
+
+#foodbg {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  display: block;
+}
+
+#hearts {
+  width: 50%;
+  height: 100px;
+  background-color: beige;
+  object-fit: cover;
+}
+
+#taustakuva {
+  width: 600px;
+  height: 400px;
+  background-color: bisque;
+  background-image: url(img/salad-bg.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<main>
+    <p>Resize the browser window. When the width of this document is 600 pixels or less, the background-color is "lightblue", otherwise it is "lightgreen".</p>
+    <h1>joo moi täällä on konturanttia</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eaque esse suscipit debitis vitae perferendis commodi a repellat. Nulla accusamus omnis assumenda natus rem consequatur doloribus nesciunt, nisi facilis aliquam?</p>
+    <h2>yeah of yeah</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, iure itaque natus vero magni at, delectus temporibus nihil quam accusantium, quaerat rerum impedit sunt ut dolores praesentium id sed ab.
+    Officia nesciunt praesentium sunt dolorum repellendus sequi sit expedita deleniti consequuntur? Assumenda vero ipsum cum, modi eius sit, nulla, harum vel optio iure natus sed autem eveniet magnam magni similique.</p>
+</main>
+<h2>Max width ja margin auto</h2>
+<img src="img/food.jpeg" alt="food picture" id="foodbg" />
+
+<h2>Object:fit kuvalle</h2>
+<img src="img/food_hearts.jpeg" alt="food hearts" id="hearts" />
+
+<h2>HTML picture element</h2>
+<picture>
+  <source srcset="img/2_ankkaa.jpg" media="(max-width: 600px)">
+  <source srcset="img/purple-salad.png">
+  <img src="img/2_ankkaa.jpg" alt="ankkoja" style="width: auto;">
+</picture> 
+
+<h2>Taustakuva</h2>
+
+<div id="taustakuva"></div>
+</body>
+</html>
+
+
