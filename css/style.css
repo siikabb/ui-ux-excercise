@@ -113,7 +113,7 @@ nav ul {
   float: inline-end;
   border-radius: 25px;
   border: 3px solid var(--dark);
-  background: var(--med-light) url(/img/salad-bg.svg);
+  background: var(--med-light) url(../img/salad-bg.svg);
 }
 
 .info-pic {
