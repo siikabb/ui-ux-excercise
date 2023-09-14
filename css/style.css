@@ -113,8 +113,8 @@ nav ul {
   flex-direction: column;
   flex: 1;
   justify-content: center;
-  text-shadow: 0px 0px 3px var(--med-dark);
-  background-color: #3400307f;
+  text-shadow: 0px 0px 1px var(--dark);
+  background-color: #340030bf;
   margin: 1em;
   /* box-sizing: border-box; */
   border-radius: 20px;
