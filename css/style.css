@@ -189,6 +189,16 @@ footer {
   padding: auto;
 }
 
+@media only screen and (max-width: 1000px) {
+  .banner-content {
+    flex: 1;
+  }
+
+  .banner-void {
+    flex: 1;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   main {
     width: 100%;
@@ -237,16 +247,6 @@ footer {
 
   .info h2 {
     margin: 10px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .banner-content {
-    flex: 1;
-  }
-
-  .banner-void {
-    flex: 1;
   }
 }
 
