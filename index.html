@@ -1,141 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vegexpress</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/dialog.css" />
-    <script src="js/dialog.js" defer></script>
-  </head>
-  <body>
-    <main class="clearfix">
-      <nav class="clearfix">
-        <h1 id="logo">Vegexpress</h1>
-        <!-- <img src="img/vegexpress.webp" alt="Logo" id="logo-img" /> -->
-        <ul>
-          <li class="navitem"><a href="">Etusivu</a></li>
-          <li class="navitem"><a href="">Ruokalista</a></li>
-          <li class="navitem"><a href="">Yhteystiedot</a></li>
-        </ul>
-      </nav>
-      <div id="banner">
-        <div class="banner-content">
-          <h1>Vegexpress</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
-            debitis quisquam doloremque dicta laudantium similique nam quia
-            corporis nulla.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            consectetur harum ipsum voluptatibus consequatur error culpa beatae
-            accusantium, nobis recusandae voluptates nemo ex architecto laborum
-            doloribus atque alias commodi. Voluptatem!
-          </p>
-        </div>
-        <div class="banner-void"></div>
-      </div>
-      <section style="height: 150px">
-        <button id="open_dialog">Open Dialog</button>
-      </section>
-      <div class="info">
-        <div id="info-content" class="clearfix">
-          <img
-            src="img/purple-salad.png"
-            alt="Salaattiannos"
-            class="info-pic"
-          />
-          <img src="img/Tomato.png" alt="Tomaatti" id="tomato" />
-          <h2>Tietoa meistä</h2>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-            repellendus commodi quaerat! Temporibus voluptas sit provident
-            pariatur deleniti, magnam labore obcaecati alias repudiandae vitae
-            amet, animi quibusdam velit nesciunt nemo. Est pariatur
-            reprehenderit ducimus tenetur. Iure commodi fuga provident sunt
-            ullam eligendi asperiores vel, enim, iste id mollitia neque illo?
-            Nihil aut voluptatum fugit qui earum optio obcaecati alias quam!
-            Possimus minus recusandae quam alias cum, fugit dolores quas velit a
-            cumque facilis voluptas voluptatibus repellendus deleniti quis
-            natus? Impedit, unde quaerat fugiat voluptatibus magni praesentium
-            autem veniam expedita iusto! Error deserunt est vero assumenda
-            impedit. Quaerat architecto dolorum alias ab blanditiis sapiente
-            accusantium, suscipit rerum amet eaque nisi ipsum dolores deleniti
-            earum voluptatem ex illo in? Rem, perspiciatis tempore? Inventore ut
-            totam neque quaerat perspiciatis cupiditate tempore ex, suscipit
-            iusto facilis, quisquam dicta magni asperiores quidem esse
-            repudiandae eum quam consectetur dolorem? Suscipit quisquam,
-            eligendi dolor quas nam dolores! Incidunt recusandae eum impedit
-            placeat molestias eius voluptas atque harum. Fugiat cum autem id
-            nemo voluptas veritatis possimus consequuntur quod, eligendi
-            aspernatur omnis in? Expedita voluptas a ratione quibusdam
-            distinctio! Doloremque iure perspiciatis nihil fuga laboriosam eum
-            voluptatem ea magnam quibusdam id. Doloribus fugiat totam maxime
-            dicta excepturi soluta provident, doloremque est deserunt impedit ut
-            quia minus eveniet perspiciatis inventore? Corporis ex voluptatem
-            illum aliquid nam. Velit incidunt ipsam itaque nesciunt facere,
-            eaque voluptate, deleniti accusamus expedita, quis aut! Rerum minima
-            nisi, natus illo aliquam temporibus adipisci veniam reprehenderit
-            nesciunt. Deleniti eos dolore, exercitationem modi nesciunt autem
-            commodi nostrum cum reprehenderit explicabo cupiditate delectus
-            voluptatibus impedit molestiae porro, possimus eligendi quasi atque
-            enim. Harum earum recusandae ipsam quam, enim praesentium? Quibusdam
-            eveniet fuga nam optio obcaecati architecto rem voluptatum quidem
-            veritatis aperiam! Similique eaque, reprehenderit nulla, vero
-            sapiente neque sed qui repellat sit voluptate asperiores ea facilis
-            ut ad eum! Reprehenderit voluptatum iure, impedit consectetur
-            maiores quia voluptas tempore aperiam doloribus perspiciatis animi
-            aliquid delectus fuga debitis adipisci quasi! Deleniti officia ullam
-            aliquid provident ipsa minima laudantium ad quam facilis! Impedit,
-            laborum consequuntur. Provident pariatur earum dolor magnam
-            repudiandae. Dolorem rerum voluptate exercitationem modi est sunt
-            quaerat sint, porro omnis ratione voluptatum ducimus laboriosam
-            molestias nesciunt esse. Possimus, adipisci assumenda. Assumenda
-            minus praesentium accusamus vel facere deleniti perspiciatis
-            possimus dolor aut enim repellat magni, alias dolore soluta omnis
-            esse, vitae quia a aliquam officia porro, ratione debitis fuga!
-          </p>
-        </div>
-      </div>
-    </main>
-    <footer>Joona Loukkola 2023</footer>
+<html lang="zxx">
 
-    <dialog>
-      <h2 id="dialog_title" class="h2">Rekisteröidy käyttäjäksi</h2>
-      <p id="dialog_description">emt tähän joku kiva kuva/animaatio/jotain</p>
-      <form action="post" class="myForm">
-        <label for="surname"
-          >Sukunimi (väh. 3 merkkiä):<input
-            type="text"
-            name="surname"
-            id=""
-            minlength="3"
-            placeholder="Sukunimi"
-            required
-        /></label>
-        <label for="email"
-          >Sähköposti (@metropolia.fi):<input
-            type="email"
-            name="email"
-            id=""
-            pattern=".*@metropolia\.fi$"
-            placeholder="@metropolia.fi"
-            required
-        /></label>
-        <label for=""
-          >Salasana (väh. yksi iso kirjain sekä numero):<input
-            type="password"
-            required
-            pattern="^(?=.*[0-9])(?=.*[A-Z]).{8,}$"
-            placeholder="Salasana"
-        /></label>
-        <input type="submit" value="Lähetä" />
-        <div class="flex flex-space-between">
-          <button id="close_dialog">Sulje</button>
-        </div>
-      </form>
-    </dialog>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vegexpress</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dialog.css">
+  <script src="js/dialog.js" defer></script>
+</head>
+
+<body>
+  <main class="clearfix">
+    <nav class="clearfix">
+      <div id="logo">Vegexpress</div>
+      <!-- <img src="img/vegexpress.webp" alt="Logo" id="logo-img" /> -->
+      <ul>
+        <li class="navitem"><a href="">Etusivu</a></li>
+        <li class="navitem"><a href="">Ruokalista</a></li>
+        <li class="navitem"><a href="">Yhteystiedot</a></li>
+      </ul>
+    </nav>
+    <div id="banner">
+      <div class="banner-content">
+        <h1>Vegexpress</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+          debitis quisquam doloremque dicta laudantium similique nam quia
+          corporis nulla.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+          consectetur harum ipsum voluptatibus consequatur error culpa beatae
+          accusantium, nobis recusandae voluptates nemo ex architecto laborum
+          doloribus atque alias commodi. Voluptatem!
+        </p>
+      </div>
+      <div class="banner-void"></div>
+    </div>
+    <div style="height: 150px">
+      <button id="open_dialog">Open Dialog</button>
+    </div>
+    <div class="info">
+      <div id="info-content" class="clearfix">
+        <img src="img/purple-salad.png" alt="Salaattiannos" class="info-pic">
+        <img src="img/Tomato.png" alt="Tomaatti" id="tomato">
+        <h2>Tietoa meistä</h2>
+        <br>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+          repellendus commodi quaerat! Temporibus voluptas sit provident
+          pariatur deleniti, magnam labore obcaecati alias repudiandae vitae
+          amet, animi quibusdam velit nesciunt nemo. Est pariatur
+          reprehenderit ducimus tenetur. Iure commodi fuga provident sunt
+          ullam eligendi asperiores vel, enim, iste id mollitia neque illo?
+          Nihil aut voluptatum fugit qui earum optio obcaecati alias quam!
+          Possimus minus recusandae quam alias cum, fugit dolores quas velit a
+          cumque facilis voluptas voluptatibus repellendus deleniti quis
+          natus? Impedit, unde quaerat fugiat voluptatibus magni praesentium
+          autem veniam expedita iusto! Error deserunt est vero assumenda
+          impedit. Quaerat architecto dolorum alias ab blanditiis sapiente
+          accusantium, suscipit rerum amet eaque nisi ipsum dolores deleniti
+          earum voluptatem ex illo in? Rem, perspiciatis tempore? Inventore ut
+          totam neque quaerat perspiciatis cupiditate tempore ex, suscipit
+          iusto facilis, quisquam dicta magni asperiores quidem esse
+          repudiandae eum quam consectetur dolorem? Suscipit quisquam,
+          eligendi dolor quas nam dolores! Incidunt recusandae eum impedit
+          placeat molestias eius voluptas atque harum. Fugiat cum autem id
+          nemo voluptas veritatis possimus consequuntur quod, eligendi
+          aspernatur omnis in? Expedita voluptas a ratione quibusdam
+          distinctio! Doloremque iure perspiciatis nihil fuga laboriosam eum
+          voluptatem ea magnam quibusdam id. Doloribus fugiat totam maxime
+          dicta excepturi soluta provident, doloremque est deserunt impedit ut
+          quia minus eveniet perspiciatis inventore? Corporis ex voluptatem
+          illum aliquid nam. Velit incidunt ipsam itaque nesciunt facere,
+          eaque voluptate, deleniti accusamus expedita, quis aut! Rerum minima
+          nisi, natus illo aliquam temporibus adipisci veniam reprehenderit
+          nesciunt. Deleniti eos dolore, exercitationem modi nesciunt autem
+          commodi nostrum cum reprehenderit explicabo cupiditate delectus
+          voluptatibus impedit molestiae porro, possimus eligendi quasi atque
+          enim. Harum earum recusandae ipsam quam, enim praesentium? Quibusdam
+          eveniet fuga nam optio obcaecati architecto rem voluptatum quidem
+          veritatis aperiam! Similique eaque, reprehenderit nulla, vero
+          sapiente neque sed qui repellat sit voluptate asperiores ea facilis
+          ut ad eum! Reprehenderit voluptatum iure, impedit consectetur
+          maiores quia voluptas tempore aperiam doloribus perspiciatis animi
+          aliquid delectus fuga debitis adipisci quasi! Deleniti officia ullam
+          aliquid provident ipsa minima laudantium ad quam facilis! Impedit,
+          laborum consequuntur. Provident pariatur earum dolor magnam
+          repudiandae. Dolorem rerum voluptate exercitationem modi est sunt
+          quaerat sint, porro omnis ratione voluptatum ducimus laboriosam
+          molestias nesciunt esse. Possimus, adipisci assumenda. Assumenda
+          minus praesentium accusamus vel facere deleniti perspiciatis
+          possimus dolor aut enim repellat magni, alias dolore soluta omnis
+          esse, vitae quia a aliquam officia porro, ratione debitis fuga!
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer>Joona Loukkola 2023</footer>
+
+  <dialog>
+    <h2 id="dialog_title" class="h2">Rekisteröidy käyttäjäksi</h2>
+    <p id="dialog_description">emt tähän joku kiva kuva/animaatio/jotain</p>
+    <form action="post" class="myForm">
+      <label for="surname">Sukunimi (väh. 3 merkkiä):<input type="text" name="surname" id="surname" minlength="3"
+          placeholder="Sukunimi" required></label>
+      <label for="email">Sähköposti (@metropolia.fi):<input type="email" name="email" id="email"
+          pattern=".*@metropolia\.fi$" placeholder="@metropolia.fi" required></label>
+      <label>Salasana (väh. yksi iso kirjain sekä numero):<input type="password" required
+          pattern="^(?=.*[0-9])(?=.*[A-Z]).{8,}$" placeholder="Salasana"></label>
+      <input type="submit" value="Lähetä">
+      <div class="flex flex-space-between">
+        <button id="close_dialog">Sulje</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+
 </html>
