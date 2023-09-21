@@ -130,6 +130,21 @@ nav ul {
   flex: 3;
 }
 
+.menu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  /* grid-template-rows: 300px; */
+}
+
+.menu-item {
+  min-height: 400px;
+  background-color: var(--med-light);
+  border: var(--default-border);
+  border-radius: 25px;
+  padding: 1rem;
+}
+
 .info {
   /* height: 400px; */
   /* position: absolute; */
