@@ -138,7 +138,7 @@ nav ul {
 }
 
 .menu-item {
-  min-height: 400px;
+  min-height: 100px;
   background-color: var(--med-light);
   border: var(--default-border);
   border-radius: 25px;
